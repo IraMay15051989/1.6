@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  color: #1b1c21;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: $bkgColor;
+}
+
+.body_overfloy {
+  overflow: hidden;
+}
+
+.blur-page {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: $bkgColor;
+  position: fixed;
+  z-index: -1;
+}
+
+.blur-page-active {
+  z-index: 10;
+}
+
+.main {
+  background-color: $bkgColor;
+  border-top: 1px solid $lgreenColor;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: $bkgColor;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    position: relative;
+    z-index: 4;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    margin-left: 320px;
+  }
+}

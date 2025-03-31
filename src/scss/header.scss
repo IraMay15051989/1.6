@@ -1,0 +1,151 @@
+.header {
+  width: 100%;
+  height: 88px;
+  background-color: $whiteColor;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.menu-first {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-first__burger {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-first__divider {
+  width: 2px;
+  height: 32px;
+  background-color: $lgreyColor;
+}
+
+.menu-first__divider_hidden {
+  display: none;
+}
+
+.menu-second {
+  display: flex;
+  gap: 16px;
+}
+
+.menu-second__telefon {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-second__telefon_hidden {
+  display: none;
+}
+
+.menu-second__chat {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-second__chat_hidden {
+  display: none;
+}
+
+.menu-second__profile {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-second__profile:hover {
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.menu-second__profile_hidden {
+  display: none;
+}
+
+.menu-second__divider {
+  width: 2px;
+  height: 32px;
+  background-color: $lgreyColor;
+}
+
+.menu-second__settings {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-second__settings:hover {
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.menu-second__search {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-second__search:hover {
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-first__divider_hidden {
+    display: block;
+    display: flex;
+  }
+
+  .menu-second__telefon_hidden {
+    display: block;
+  }
+
+  .menu-second__chat_hidden {
+    display: block;
+  }
+
+  .menu-second__profile_hidden {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    display: none;
+  }
+}

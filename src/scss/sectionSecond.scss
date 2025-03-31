@@ -1,0 +1,33 @@
+.section-second {
+  margin-left: 16px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  color: $greyColor;
+}
+
+.list__item {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  height: 40px;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.list__item:first-child {
+  border: 2px solid $wgreenColor;
+  border-radius: 6px;
+  background-color: $whiteColor;
+}
+
+@media screen and (min-width: 1440px) {
+  .list {
+    flex-wrap: wrap;
+  }
+}

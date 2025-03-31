@@ -1,0 +1,129 @@
+.blur-conteiner-call {
+  display: none;
+  background: $whiteColor;
+  width: 100%;
+}
+
+.call {
+  width: 320px;
+  height: 100vh;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+  border-left: 1px solid $wgreenColor;
+  border-radius: 1px;
+  transition: width 1s, transform 2s;
+  background-color: $whiteColor;
+  position: absolute;
+  right: 0;
+}
+
+.call__btn-burger {
+  width: 40px;
+  height: 40px;
+  background-color: $pinkColor;
+  border: none;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.call__title-text {
+  font-family: 'TT Lakes';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  margin-bottom: 24px;
+}
+
+.call__title-text::before {
+  content: '';
+  display: flex;
+  width: 4px;
+  height: 40px;
+  background-color: $greenColor;
+  border-radius: 5px;
+  column-gap: 12px;
+  position: absolute;
+  left: 0;
+}
+
+.call__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.call__form-phone {
+  border: 1px solid $lgreyColor;
+  height: 48px;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.call__info-text {
+  font-family: 'TT Lakes';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: $greyColor;
+}
+
+.call__info-pink-text {
+  color: $pinkColor;
+}
+
+.call__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 32px;
+  background: $pinkColor;
+  border-radius: 16px;
+  border: none;
+  margin-left: auto;
+}
+
+.call__btn:hover {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.call__btn-text {
+  font-family: TT Lakes;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+
+.call-hidden {
+  display: flex;
+  position: absolute;
+  z-index: 15;
+}
+
+@media screen and (min-width: 768px) {
+  .blur-conteiner-call {
+    z-index: 5;
+  }
+  .call {
+    width: 400px;
+  }
+
+  .call__btn-burger {
+    position: absolute;
+    left: -70px;
+  }
+}

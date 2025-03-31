@@ -1,0 +1,326 @@
+.price__header {
+  margin-top: 24px;
+  border-top: 1px solid $lgreenColor;
+  background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
+  padding: 16px;
+}
+
+.price__header-text {
+  font-family: 'TT Lakes';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: $greyColor;
+}
+
+.swiper-price__nav {
+  display: none;
+}
+
+.price-list {
+  margin-top: 16px;
+  margin-left: 8px;
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+.swiper-price-item__div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.swiper-price-content {
+  display: flex;
+  flex-direction: column;
+  background: $whiteColor;
+  gap: 16px;
+  text-align: left;
+  width: 228px;
+  height: 168px;
+  padding: 16px;
+  position: relative;
+}
+
+.swiper-price-item__div-time-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-price__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 32px;
+  background: $pinkColor;
+  border-radius: 16px;
+  border: none;
+  text-decoration: none;
+}
+
+.swiper-price__btn:hover {
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.swiper-price__heading,
+.swiper-price-item__title {
+  font-family: 'TT Lakes';
+  color: $greyColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.swiper-price__btn-text {
+  font-family: 'TT Lakes';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+
+.swiper-price-item__text {
+  font-family: 'TT Lakes';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: $blackColor;
+}
+.price__information {
+  padding: 16px;
+}
+
+.price__info {
+  font-family: 'TT Lakes';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $blackColor;
+  margin-bottom: 16px;
+}
+
+.price__offer {
+  font-family: 'TT Lakes';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $blackColor;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.price__offer-img {
+  position: absolute;
+  width: 24px;
+  height: 27.491px;
+}
+
+.price__order {
+  position: absolute;
+  width: 119px;
+  height: 32px;
+  bottom: 2px;
+  left: 100px;
+}
+
+.price__gradient {
+  position: fixed;
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  width: 24px;
+  height: 200px;
+  top: 1200px;
+  right: 0;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .swiper-price__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 24px 16px 40px;
+    justify-content: center;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .price__header-text {
+    padding: 0 16px 0 24px;
+  }
+
+  .price-list {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin: 0 16px 0 16px;
+    background-color: $whiteColor;
+  }
+
+  .swiper-price-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .swiper-price-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 16px;
+    min-width: 688px;
+  }
+
+  .swiper-price-content::after {
+    content: '';
+    border-bottom: 1px solid $lgreyColor;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    min-width: 688px;
+  }
+
+  .swiper-price-item__title {
+    display: none;
+  }
+
+  .price__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .price__info {
+    max-width: 421px;
+  }
+
+  .swiper-price__heading-repair {
+    flex: 2;
+  }
+
+  .swiper-price__heading-price {
+    flex: 0.6;
+  }
+
+  .swiper-price__heading-time {
+    flex: 1.2;
+  }
+
+  .swiper-price-item__div-repair {
+    flex: 2;
+  }
+
+  .swiper-price-item__div-price {
+    flex: 0.5;
+  }
+
+  .swiper-price-item__div-time {
+    flex: 1;
+  }
+
+  .swiper-price-item__text {
+    min-width: 88px;
+  }
+
+  .price__gradient {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1056px;
+  }
+
+  .swiper-price__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1056px;
+  }
+
+  .swiper-price-content {
+    min-width: 1056px;
+    padding: 24px;
+  }
+
+  .price__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 32px;
+  }
+
+  .swiper-price-content::after {
+    min-width: 1056px;
+  }
+
+  .swiper-price__heading-price {
+    flex: 1;
+  }
+
+  .swiper-price__heading-time {
+    flex: 1.2;
+  }
+
+  .swiper-price-item__div-repair {
+    flex: 2;
+  }
+
+  .swiper-price-item__div-price {
+    flex: 1;
+  }
+
+  .swiper-price-item__div-time-btn {
+    flex: 1.3;
+  }
+
+  .swiper-price-item__text {
+    min-width: 148px;
+  }
+
+  .swiper-price__btn {
+    margin-right: 32px;
+  }
+  .price__offer {
+    margin-bottom: 0;
+  }
+}
